@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#212F3C"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:padding="12dp"
+            android:text="Question 1: Who has the most ballon d'Ors?"
+            android:textColor="#AF7AC5"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_messi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Leo Messi"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radio_ronaldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Cristiano Ronaldo"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radio_beckenbauer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Franz Beckenbauer"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radio_ronaldinho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Ronaldinho Gaucho"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:padding="12dp"
+            android:text="Question 2: Which team won the most UCL titles?"
+            android:textColor="#AF7AC5"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/enter_text_for_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="Enter team"
+            android:textColor="@color/white"
+            android:inputType="textCapSentences"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:padding="12dp"
+            android:text="Question 3: Which footballers played in the same team?"
+            android:textColor="#AF7AC5"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/sanchez_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Alexis Sanchez"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/totti_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Francesco Totti"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/villa_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="David Villa"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/neymar_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Neymar Jr"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:padding="12dp"
+            android:text="Question 4: Which defender played for AC Milan?"
+            android:textColor="#AF7AC5"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_vandijk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Virgil Van Dijk"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radio_ramos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Sergio Ramos"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radio_maldini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Paolo Maldini"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radio_moore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Bobby Moore"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="submitAnswers"
+                android:text="SUBMIT ANSWERS"
+                android:textAlignment="center" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+</ScrollView>
